@@ -1,20 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #222;
-    margin: 0; padding: 20px
-}
-
-main {
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: black;
-    padding: 10px;
-    text-align: center;
-    color: white;
-}
-
-main a {
-    color: white;
-    margin-right: 50px;
+    background-image: url('moon.png');
+    background-size: 50% auto;
+    background-color: #000;
+    background-position: center 20px;
+    background-repeat: no-repeat;
+    color: white
 }
