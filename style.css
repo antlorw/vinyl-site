@@ -30,15 +30,13 @@ body {
     background-color: #000;
     color: white;
     font-family: "Forum";
-    font-size: 14px;
+    font-size: 18px;
 }
 
 nav {
     display: flex;
-    align-items: center;
+    position: relative;
     gap: 20px;
-    margin-top: 2%;
-    margin-right: 50%;
 }
 
 nav a {
@@ -46,10 +44,42 @@ nav a {
     text-decoration: none;
     letter-spacing: 2px;
     font-family: "Forum";
-    font-size: 20px;
-    margin-left: 2%;
+    font-size: 16px;
+    margin-top: 2%;
+    margin-left: 3%
 }
 
 nav img {
-    margin-left: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    top: 7%;
+}
+
+main {
+    position: relative;
+}
+
+main img {
+    float: left;
+    margin-right: 20px;
+    width: 300px;
+    position: relative;
+    top: 150px;
+}
+
+main h1 {
+    margin-left: 325px;
+    position: relative;
+    top: 150px;
+}
+
+main p {
+    margin: 5;
+    padding-left: 325px;
+}
+
+main p:first-of-type {
+    margin-top: 155px;
 }
