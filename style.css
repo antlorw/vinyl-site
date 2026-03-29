@@ -5,7 +5,7 @@
 body {
     background-color: #000;
     color: white;
-    font-family: "Forum",sans-serif;
+    font-family: "Forum", sans-serif;
     font-size: 18px;
     margin: 0;
     padding: 20px;
@@ -67,14 +67,95 @@ main p:first-of-type {
     margin-top: 155px;
 }
 
-table {
-    margin: 20px 0;
+/* ========== СТИЛИ ДЛЯ ТАБЛИЦЫ ========== */
+main table {
+    width: 100%;
+    margin: 40px 0;
+    border-collapse: collapse;
+    background-color: #0a0a0a;
+    position: static;
 }
 
-th {
-    background-color: #444;
+main table * {
+    position: static;
+    float: none;
+    top: auto;
+    margin: 0;
+    padding: 0;
 }
 
+main table th,
+main table td {
+    border: 2px solid #911e42;
+    padding: 15px;
+    vertical-align: top;
+    text-align: left;
+}
+
+main table th {
+    background-color: #911e42;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+main table td {
+    color: #ddd;
+}
+
+/* Ширина столбцов */
+main table th:first-child,
+main table td:first-child {
+    width: 200px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+main table th:nth-child(2),
+main table td:nth-child(2) {
+    width: 220px;
+}
+
+main table th:last-child,
+main table td:last-child {
+    width: auto;
+}
+
+/* Обложки внутри таблицы */
+main table td img {
+    width: 200px;
+    height: auto;
+    float: none;
+    display: inline-block;
+    top: 0;
+    margin: 0;
+}
+
+/* Вложенная таблица (трек-лист) */
+main table table {
+    width: 100%;
+    margin: 0;
+    background-color: #1a1a1a;
+    border-collapse: collapse;
+}
+
+main table table td {
+    border: 1px solid #555;
+    padding: 5px 8px;
+    font-size: 14px;
+}
+
+/* Заголовок h2 над таблицей */
+main h2 {
+    margin-left: 0;
+    padding-left: 0;
+    position: static;
+    color: #911e42;
+    font-size: 28px;
+    margin-top: 40px;
+}
+
+/* Кнопка */
 button {
     background-color: white;
     color: #000;
@@ -90,10 +171,12 @@ button {
 
 button:hover {
     background-color: #911e42;
+    color: white;
 }
 
+/* Ссылки */
 a {
-    color: #ffcc00;
+    color: #911e42;
     text-decoration: none;
 }
 
@@ -101,6 +184,7 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Стили для главной страницы */
 body.index {
     background-image: url('images/moon.png');
     background-size: 50% auto;
@@ -135,5 +219,5 @@ main.index a:hover {
 
 #top {
     scroll-margin-top: 20px;
-    background-color: #911e42;
+    color: #911e42;
 }
